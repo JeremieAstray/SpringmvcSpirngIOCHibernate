@@ -30,4 +30,7 @@ public class UserDaoImpl implements UserDao {
 		return (User)query.uniqueResult();
 	}
 	
+	public User updateUser(User user) {
+		return null;
+	}
 }

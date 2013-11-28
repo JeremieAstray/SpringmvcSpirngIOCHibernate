@@ -19,7 +19,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
       <script type="text/javascript">
 		alert("登录失败");
-		window.location.href = "login.jsp";
+		window.location.href = "loginpage";
 	</script>
   </body>
 </html>

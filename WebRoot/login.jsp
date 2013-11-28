@@ -23,7 +23,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-<form action="<c:url value="user/login"/>" method="post">
+<form action="<c:url value="login"/>" method="post">
 			学号：<input type="text" name="userNum">
 			<br>
 			密 码：<input type="password" name="password">

@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>成功页面</title>
+    <title>修改页面</title>
     <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -22,7 +22,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    success! <br>
+    success! <br/>
     <table border="1">
     	<tr>
     		<td>${user.id}</td>
@@ -37,6 +37,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
      		<td>test</td>
      	</tr>
      </table>
-     <a href="user/update/${user.id}">修改用户信息</a>
+     <form action="user/update" method="post">
+     		<input type="hidden" name="id" value="${user.id}" /><br/>
+    		 学号：<input type="text" name="userNum" value ="${user.userNum}" ><br/>
+			密 码：<input type="password" name="password" value = "${user.password}"><br/>
+			<input type="submit" value="修改" />
+			<input type="reset" value="重置" />
+     </form>
   </body>
 </html>

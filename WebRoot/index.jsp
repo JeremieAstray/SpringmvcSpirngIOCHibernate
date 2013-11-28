@@ -26,7 +26,7 @@
 		<input type="submit" value="注册" /> 
 		<input type="reset" value="重置" />
 	</form>
-	<a href="login.jsp">前往登陆页面</a>
+	<a href="loginpage">前往登陆页面</a>
 	
 </body>
 </html>
